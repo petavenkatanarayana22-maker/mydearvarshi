@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Dear Varshi - A Dedication</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* BASE STYLES & RESET */
+        :root {
+            --color-primary: #1D3557; /* Navy Blue */
+            --color-secondary: #F4D35E; /* Accent */
+            --color-background: #F8F8F8; /* Off-White */
+            --color-text: #333333;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+        }
+
+        section {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        /* Hero */
+        #hero {
+            /* ** IMAGE URL 1: Main Background ** */
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://image2url.com/images/1764914592527-a9ee178f-737a-4f69-9221-4b1d7bd0231f.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        #hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 0.2em;
+            color: white;
+        }
+
+        #hero p {
+            font-size: 1.4em;
+            font-weight: 400;
+        }
+
+        /* PRANK SECTION STYLES */
+        #prank-button-container {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 60px 5%;
+        }
+        
+        #prank-button-container h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        #prank-button {
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: 700;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #prank-button:hover {
+            background-color: #FFD966; /* Lighter accent */
+        }
+
+        /* THE PRANK CONTAINER STYLES */
+        #prank-content {
+            display: none;
+            padding: 100px 5%;
+            min-height: 80vh; 
+            background-color: white;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #prank-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .prank-message {
+            font-size: 1.8em;
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+        }
+        
+        .timer-text {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--color-secondary);
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="hero">
+        <h1>To My Dearest Varshi</h1>
+        <p>This page is dedicated entirely to you, the one who brings light to my world.</p>
+    </section>
+
+    <section id="prank-button-container">
+        <h2>A Secret for Varshi's Friends Only...</h2>
+        <p>If you want to see Varshi's boyfriend's face, click below. Varshi has the secret code!</p>
+        <button id="prank-button" onclick="initiatePrank()">Click Here</button>
+    </section>
+
+    <section id="prank-content">
+    </section>
+    
+    <section id="qualities" style="background-color: white;">
+        <h2>💖I Love You</h2>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 900px; margin: 0 auto;">
+            <div style="width: 250px; margin: 20px; padding: 20px; border: 1px solid var(--color-secondary); border-radius: 8px;">
+                <h3>Your face</h3>
+                <p>ni face mundu 100 moons kuda paniki ravu maa antha baguntadini ni face inka ni lips mundu a sweet paniki radhu antha sweet ga untai ni lips.</p>
+            </div>
+            <div style="width: 250px; margin: 20px; padding: 20px; border: 1px solid var(--color-secondary); border-radius: 8px;">
+                <h3>Your behaviour</h3>
+                <p>ninnu appudu chusina oka chinna pilla ni chusinatu untadi antha iena na bujji varshi vi kadha.</p>
+            </div>
+            <div style="width: 250px; margin: 20px; padding: 20px; border: 1px solid var(--color-secondary); border-radius: 8px;">
+                <h3>Your smile </h3>
+                <p>aa smile thoney nunnu padeysavu aa smile chustu brathiki povochu ra life long.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" style="background-color: var(--color-background);">
+        <h2>🗓 Our Journey Together</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+            <div style="border-left: 3px solid var(--color-primary); padding-left: 20px; margin-left: 20px;">
+                <h3 style="color: var(--color-secondary);">First Date: 06/06/2025</h3>
+                <p style="margin-top: -10px; margin-bottom: 30px;">NUVU NAKU MESSAGE CHESINA ROJU NA HEART LOKI ENTER IENA ROJU.</p>
+                
+                <h3 style="color: var(--color-secondary);">ninnu chusina roju: 10/10/2025</h3>
+                <p style="margin-top: -10px; margin-bottom: 30px;">ME BABAI PELLI LO CHUSA NUVU NA DANIVI IPOENA THARAVATHA DEVATHA LAGA UNNAVU MAA.</p>
+                
+                <h3 style="color: var(--color-secondary);">: hunuman festival kosam waiting</h3>
+                <p style="margin-top: -10px; margin-bottom: 0;">NINNU EPPUDU CHUSTANA EPPUDU NITHO MATLADUTHANA ANI WAITING MAA.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" style="background-color: white;">
+        <h2>📸 A Few Favorite Memories</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto;">
+            <img src="https://image2url.com/images/1764913288472-df778cbc-2bec-44fc-98c6-61e175dc17af.jpg" alt="Memory Photo 1" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="https://image2url.com/images/1764913328716-0d7441ab-45eb-4554-a7cc-5c2091e5048e.jpg" alt="Memory Photo 2" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="https://image2url.com/images/1764913347274-e822aae1-daef-4a13-81e9-62084d64fee0.jpg" alt="Memory Photo 3" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+    </section>
+
+    <section id="closing" style="background-color: var(--color-primary); color: white;">
+        <h2>Forever and Always</h2>
+        <p style="font-size: 1.2em; max-width: 600px; margin: 20px auto;">Thank you for being my partner, my best friend, and the greatest adventure of my life. I love you more than words can say.</p>
+        <p style="font-style: italic;">— rudrareddyy</p>
+    </section>
+
+    <script>
+        // --- PRANK LOGIC ---
+        const CORRECT_PASSWORD = '7569';
+        const TIMER_SECONDS = 20;
+        // ** IMAGE URL 5: Prank Image **
+        const PRANK_IMAGE_URL = 'https://image2url.com/images/1764913871854-ed287eae-ae5e-4bf1-a919-8e91bc841bf9.jpg'; 
+        
+        function initiatePrank() {
+            // 1. Ask for Password
+            const enteredPassword = prompt("Varshi's Boyfriend Face Access:\nPlease enter the 4-digit password:");
+
+            if (enteredPassword === CORRECT_PASSWORD) {
+                // Correct Password: Start the sequence
+                const buttonContainer = document.getElementById('prank-button-container');
+                const prankContent = document.getElementById('prank-content');
+                
+                // Hide the button container and show the blank content area
+                buttonContainer.style.display = 'none';
+                prankContent.style.display = 'flex'; // Use flex to center content
+                
+                // 2. Start Blank Page Timer
+                startBlankTimer(prankContent);
+            
+            } else if (enteredPassword !== null) {
+                // Incorrect password (and not just cancelled)
+                alert("Incorrect Password! Access Denied.");
+            }
+        }
+
+        function startBlankTimer(contentElement) {
+            let timeLeft = TIMER_SECONDS;
+            
+            // FIX: Use backticks (`) for template literal
+            contentElement.innerHTML = `<p class="timer-text">Loading secret image... Please wait ${timeLeft} seconds.</p>`;
+
+            const timerInterval = setInterval(() => {
+                timeLeft--;
+                // FIX: Use backticks (`) for template literal
+                contentElement.innerHTML = `<p class="timer-text">Loading secret image... Please wait ${timeLeft} seconds.</p>`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    
+                    // 3. Display Image and Prank Message
+                    displayPrankReveal(contentElement);
+                }
+            }, 1000); // Update every 1 second
+        }
+
+        function displayPrankReveal(contentElement) {
+            // FIX: Use backticks (`) for template literal
+            contentElement.innerHTML = `
+                <h2> Meet Varshi's Boyfriend!</h2>
+                <img src="${PRANK_IMAGE_URL}" alt="Prank Reveal Image" style="max-width: 400px; height: auto;">
+                <p class="prank-message">Prank! 😜</p>
+                <p>Don't worry, the real boyfriend is much better</p>
+            `;
+            
+            // Optional: Re-scroll to the top of the prank content
+            contentElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
